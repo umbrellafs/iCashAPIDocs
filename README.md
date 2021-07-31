@@ -26,6 +26,7 @@ It contains the following 12 functions:
 ### Path
 
     {base URL}/Token
+
 ### Headers
 This function requires the following:
 
@@ -44,6 +45,7 @@ This function  required the following body parameters
     "Password" : "P@$$W0RD",
     "grant_type" : "password"
     }
+
 ### Response
 
     {
@@ -59,6 +61,7 @@ This function  required the following body parameters
 ### Path
 
     {base URL}/api/ICashAccount/GetBalance
+
 ### Headers
 This function requires the following headers:
 
@@ -87,6 +90,7 @@ This function  required no body parameters
 ### Path
 
     {base URL}/api/ICashAccount/GetStatement
+
 ### Headers
 This function requires the following headers:
 
@@ -162,6 +166,7 @@ This function requires no body parameters
 ### Path
 
     {base URL}/api/ICashAccount/TransferMoney
+
 ### Headers
 This function requires the following headers:
 
@@ -197,6 +202,7 @@ This function requires the following body parameters:
 ### Path
 
     {base URL}/api/ICashAccount/GeneratePaymentCode
+
 ### Headers
 This function requires the following headers:
 
@@ -231,6 +237,7 @@ This function requires the following body parameters:
 ### Path
 
     {base URL}/api/ICashAccount/ValidateVoucher
+
 ### Headers
 This function requires the following headers:
 
@@ -268,6 +275,7 @@ This function requires the following body parameters:
 ### Path
 
     {base URL}/api/ICashAccount/RedeemVoucher
+
 ### Headers
 This function requires the following headers:
 
@@ -290,6 +298,7 @@ This function requires the following body parameters:
     "Voucher" : 75311972192799,
     "VoucherValue" : 10
     }
+
 ### Response
 
     {
@@ -300,6 +309,7 @@ This function requires the following body parameters:
 ## Pay Invoice (POST)
 ### Path
     {base URL}/api/ICashAccount/PayInvoice
+
 ### Headers
 This function requires the following headers:
 
@@ -314,6 +324,7 @@ This function requires the following parameters:
     {
     "iCashCardNumber" : 7121234567
     }
+
 ### Body
 This function requires the following body parameters:
 
@@ -328,18 +339,21 @@ This function requires the following body parameters:
 ### Path
 
     {base URL}/api/ICashAccount/GetiCashCardNetworkNumber
+
 ### Headers
 This function requires the following headers:
 
     {
     "Content-Type": "application/x-www-form-urlencoded"
     }
+
 ### Parameters
 This function requires the following parameters:
 
     {
     "iCashCardNumber" : 7121234567
     }
+
 ### Body
 This function requires no body parameters
 
@@ -353,6 +367,7 @@ This function requires no body parameters
 ### Path
 
     {base URL}/api/Merchant/CanCustomerPurchase
+
 ### Headers
 This function requires the following headers:
 
@@ -360,12 +375,14 @@ This function requires the following headers:
     "Content-Type": "application/x-www-form-urlencoded",
     "Authorization": "Bearer {accessToken}"
     }
+
 ### Parameters
 This function requires the following parameters:
 
     {
     "iCashCardNumber" : 7121234567
     }
+
 ### Body
 This function requires the following body parameters:
 
@@ -383,6 +400,7 @@ This function requires the following body parameters:
 ### Path
 
     {base URL}/api/Merchant/GeneratePaymentQR
+
 ### Headers
 This function requires the following headers:
 
@@ -390,6 +408,7 @@ This function requires the following headers:
     "Content-Type": "application/x-www-form-urlencoded",
     "Authorization": "Bearer {accessToken}"
     }
+
 ### Parameters
 This function required the following Parameters:
 
@@ -408,6 +427,7 @@ The function returns a QR code for the invoice amount and shop number as a .png 
 ### Path
 
     {base URL}/api/ICashAccount/SetNewPIN
+
 ### Headers
 This function requires the following headers:
 
@@ -415,12 +435,14 @@ This function requires the following headers:
     "Content-Type": "application/x-www-form-urlencoded",
     "Authorization": "Bearer {accessToken}"
     }
+
 ### Parameters
 This function requires the following parameters:
 
     {
     "iCashCardNumber" : 7121234567
     }
+
 ### Body
 This function  required the following body parameters
     
